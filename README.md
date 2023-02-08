@@ -5,10 +5,11 @@ Django is a web framework written in Python which makes creating web application
 
 
 ### How to use:
-* Clone repository: `https://github.com/paigomez/my_first_django.git`
-* Go to project folder: `cd my_first_django`
+* Clone repository: `git clone https://github.com/paigomez/my_first_django.git`
+* Goto project folder: `cd my_first_django`
 * Install dependencies: `pip install -r requirements.txt`
 * Run project: `python manage.py runserver`
+* Goto home page: `http://127.0.0.1:8000/personal/`
 
 ### Credits
 This was developed by Patricia Gomez, as part of the Hyperion Dev bootcamp
