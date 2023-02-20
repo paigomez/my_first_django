@@ -1,0 +1,114 @@
+{% load static %}
+
+<!DOCTYPE html>
+<!-- DOCTYPE indicates to the browser which version of html to use -->
+<html>
+
+<head>
+    <!-- Metadata contained here -->
+    <title>Patricia Gomez</title>
+
+    
+</head>
+
+<style>
+    .content {
+      max-width: 700px;
+      margin: auto;
+    }
+
+    .topnav {
+    max-width: 700px;
+    margin: auto;
+    position: center;
+    word-spacing: 15px;
+
+    }
+
+    body {
+    background-color: rgb(249, 213, 229);
+    }
+
+    h1 {
+    color: rgb(200, 51, 73);
+    font-size: 26px;
+    font-family: 'Courier New', monospace;
+    }
+
+    h2 {
+    color: rgb(200, 51, 73);
+    font-size: 20px;
+    font-family: 'Courier New', monospace;
+    }
+    
+    p {
+    color: rgb(224, 99, 119);
+    font-size: 14px;
+    font-family: 'Courier New', monospace;
+    }
+
+    ul {
+    list-style-type: none;
+    margin: 15px;
+    padding: 0;
+    color: rgb(224, 99, 119);
+    font-size: 14px;
+    font-family: 'Courier New', monospace;
+    }
+
+    a:link {
+    color: rgb(224, 99, 119);
+    }
+
+    a:visited {
+    color:  rgb(200, 51, 73);
+    }
+
+    a:hover {
+    color:rgb(249, 213, 229);
+    }
+    
+    a {
+    font-size: 14px;
+    font-family: 'Courier New', monospace;
+    }    
+</style>
+
+<div class="topnav">
+    <a href="{% url 'index' %}">Home</a>
+    <a class="active" href="{% url 'about' %}">About</a>
+    <a href="{% url 'contact' %}">Contact</a>
+</div>
+
+<body>
+<div class="content">
+    <!-- Content of the Webpage-->
+
+
+    <div id = "About">
+    <h1>ABOUT ME</h1>
+        <p>Hello! I&#180m Patricia and I enjoy creating programs with Python. My interest in coding developed when I first learnt how to manipulate images and texts online starting with altering my first Myspace page. 
+            Chosen in 2022 for a scholarship to learn Software Engineering, I have created and built applications, executed Object Oriented Programming and agile development. Now, whilst balancing life as a new mum, my focus is on creating beautiful websites and building complex programmes. 
+            Passionate about design, am expanding my technical repertoire to include Javascript and  Ruby. </p>
+
+        <h2>Technical Skills I&#180ve conquered:</h2>
+        <ul>
+            <li>&#9657 Python</li>
+            <li>&#9657 HTML</li>
+            <li>&#9657 CSS</li>
+            <li>&#9657 SQL</li>
+        </ul>
+
+        <h2>Soft Skills I&#180ve attained:</h2>
+        <ul>
+            <li>&#9657 Studio/office management and supervision </li>
+            <li>&#9657 Operations optimisation </li>
+            <li>&#9657 Project implementation </li>
+            <li>&#9657 Client management and strong communication skills </li>
+            <li>&#9657 Budgeting expertise and income forecasting</li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>
+

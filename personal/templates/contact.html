@@ -1,0 +1,104 @@
+{% load static %}
+
+<!DOCTYPE html>
+<!-- DOCTYPE indicates to the browser which version of html to use -->
+<html>
+
+<head>
+    <!-- Metadata contained here -->
+    <title>Patricia Gomez</title>
+
+    
+</head>
+
+<style>
+    .content {
+      max-width: 700px;
+      margin: auto;
+    }
+
+    .topnav {
+    max-width: 700px;
+    margin: auto;
+    position: center;
+    word-spacing: 15px;
+
+    }
+
+    body {
+    background-color: rgb(249, 213, 229);
+    }
+
+    h1 {
+    color: rgb(200, 51, 73);
+    font-size: 26px;
+    font-family: 'Courier New', monospace;
+    }
+
+    h2 {
+    color: rgb(200, 51, 73);
+    font-size: 20px;
+    font-family: 'Courier New', monospace;
+    }
+    
+    p {
+    color: rgb(224, 99, 119);
+    font-size: 14px;
+    font-family: 'Courier New', monospace;
+    }
+
+    ul {
+    list-style-type: none;
+    margin: 15px;
+    padding: 0;
+    color: rgb(224, 99, 119);
+    font-size: 14px;
+    font-family: 'Courier New', monospace;
+    }
+
+    a:link {
+    color: rgb(224, 99, 119);
+    }
+
+    a:visited {
+    color:  rgb(200, 51, 73);
+    }
+
+    a:hover {
+    color:rgb(249, 213, 229);
+    }
+    
+    a {
+    font-size: 14px;
+    font-family: 'Courier New', monospace;
+    }
+
+    
+</style>
+
+<div class="topnav">
+    <a href="{% url 'index' %}">Home</a>
+    <a href="{% url 'about' %}">About</a>
+    <a class="active" href="{% url 'contact' %}">Contact</a>
+</div>
+
+<body>
+    <div class="content">
+    <!-- Content of the Webpage-->
+    
+    <div id = "Contact">
+    <h1>CONTACT </h1>
+    <h2> Hello! </h2>
+    <p> I&#180m soo excited to meet you. Let me know what you need including a few details of the project you have in mind and I&#180ll endeavour to meet your requests. </p>
+    <a href = "mailto: paigomez@yahoo.com">Email</a> 
+    <p></p>
+    <a href="https://github.com/paigomez"> Git Hub </a>
+    <p></p>
+    <a href="https://www.linkedin.com/in/paigomez/">LinkedIn </a>
+    <p></p>
+    </div>
+</div>
+</body>
+
+</html>
+

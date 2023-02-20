@@ -1,11 +1,177 @@
 {% load static %}
 
-<p><img src="{% static 'assets/image.jpg' %}"></p>
+<!DOCTYPE html>
+<!-- DOCTYPE indicates to the browser which version of html to use -->
+<html>
 
-<h1>Hello django!</h1>
-<p>My name is Patricia Gomez and this is my first django project!</p>
+<head>
+    <!-- Metadata contained here -->
+    <title>Patricia Gomez</title>
 
-<p>Click <a href="{% url 'hobbies' %}">here</a> to view a list of my hobbies</p>
-<p>Click <a href="{% url 'contact_me' %}">here</a> to view my contact details</p>
+    
+</head>
 
+<style>
+    .content {
+      max-width: 700px;
+      margin: auto;
+    }
+
+    .topnav {
+    max-width: 700px;
+    margin: auto;
+    position: center;
+    word-spacing: 15px;
+
+    }
+
+    body {
+    background-color: rgb(249, 213, 229);
+    }
+
+    h1 {
+    color: rgb(200, 51, 73);
+    font-size: 26px;
+    font-family: 'Courier New', monospace;
+    }
+
+    h2 {
+    color: rgb(200, 51, 73);
+    font-size: 20px;
+    font-family: 'Courier New', monospace;
+    }
+    
+    p {
+    color: rgb(224, 99, 119);
+    font-size: 14px;
+    font-family: 'Courier New', monospace;
+    }
+
+    ul {
+    list-style-type: none;
+    margin: 15px;
+    padding: 0;
+    color: rgb(224, 99, 119);
+    font-size: 14px;
+    font-family: 'Courier New', monospace;
+    }
+
+    a:link {
+    color: rgb(224, 99, 119);
+    }
+
+    a:visited {
+    color:  rgb(200, 51, 73);
+    }
+
+    a:hover {
+    color:rgb(249, 213, 229);
+    }
+    
+    a {
+    font-size: 14px;
+    font-family: 'Courier New', monospace;
+    }
+
+    
+    </style>
+
+<div class="topnav">
+    <a class="active" href="{% url 'index' %}">Home</a>
+    <a href="{% url 'about' %}">About</a>
+    <a href="{% url 'contact' %}">Contact</a>
+</div>
+
+<body>
+    <div class="content">
+    <!-- Content of the Webpage-->
+    
+    <h1> MABUHAY! </h1>
+    <p> ** Filipino greeting, wishing for you to live long**</p>
+    
+ 
+    <img src="{% static 'assets/profile_picture.jpg' %}" alt="PG Profile Pic" width="200" height="250">
+
+    <p>
+    Versatile and motivated Junior Software Developer. 
+    Looking to excel and flourish in the tech industry. 
+    Skilled with a deep understanding of Python, HTML and CSS. 
+    </p>
+    
+    <div id = "Work">
+    <h1>1.0 WORK </h1>
+
+    <h2> <em>Logistics and Procurement Manager </em> @ Atelier001  </h2> 
+    <p> November 2021 - Present </p>
+    <ul>
+        <li> &#9657 Anticipating and resolving shipment and consignment issues </li>
+        <li> &#9657 Overseeing production, implemented systems and streamlined timelines across teams</li>
+        <li> &#9657 Connecting with craftsmen and providing client quality assurance  </li>
+        <li> &#9657 Operation lead for studio relocation and show room renovation </li>
+     </ul>
+
+     <h2> <em>Studio Manager </em> @ Atelier001  </h2> 
+     <p>January 2021 - Present</p>
+     <ul>
+         <li> &#9657 Managing team workflow, optimising resources, forecasting potential discrepancies and communicating changes across teams.  </li>
+         <li> &#9657 Expanding sales revenue and increasing showroom partnerships </li>
+         
+      </ul>
+
+    <h2> <em>Operations Manager</em> @ Parish of Our Lady of Walsingham  </h2> <h4></h4>
+    <p>June 2019 - November 2021 </p>
+    <ul>
+        <li>&#9657 Optimised office support for one of the busiest and most celebrated parishes in East London.  </li>
+
+     </ul>
+    
+    <h2> <em>Executive Assistant</em> @ Divine Renovation UK  </h2> <h4></h4>
+    <p>June 2019 - November 2021 </p>
+
+    <ul>
+        <li>&#9657 Event management including executing marketing strategies and social media campaigns. </li>
+     
+     </ul>
+
+    <h2> <em>Studio Manager</em> @ Eva Menz Design </h2> <h4></h4>
+    <p>September 2018 - May 2019 </p>
+    <ul>
+        <li>&#9657 Coordinating freelancers and contractual workers. </li>
+        <li>&#9657 Liaising with project partners to further project development. 
+        </li>
+
+     </ul>
+    
+    <h2> <em>Assistant to Director</em> @ Lomaka Gallery </h2> <h4></h4>
+    <p>January 2017 - June 2018 </p>
+    <ul>
+        <li>&#9657 Organised director&#180s media appearances and events </li>
+        <li>&#9657 Organised directors media appearances and events </li>
+        <li>&#9657 Established the company profile within online platforms and forums. 
+        </li>
+
+     </ul>
+
+    </div>
+    
+    <div id = "Education">
+    <h1>2.0 EDUCATION</h1>
+
+    <h2>Hyperion Dev </h2> <p>Creating and building applications. Executing Object Oriented Programming and agile development. Implementing popular computer science algorithms and machine learning fundamentals.</p>
+    <h2>Lewisham and Southwark college</h2> <p> Analysis and Critical Evaluation of art, issues within contemporary art, exploration and experimentation of own art practice, self - initiated projects and Independent client briefs.  </p>
+    <h2>London School of Economics & Political Sciences</h2> <p>Exploring specific examples of social action, social processes and institutions; comparing different types of social life and societies; examining theories about the nature of social existence and change; studing different methods of social research. 
+        My dissertation examined the role of social media on the formation of gendered identities.</p>
+    </div>
+    
+    <div id = "Projects">
+    <h1>3.0 PROJECTS</h1> 
+    <a href="https://github.com/paigomez/finalCapstone">Shoe Inventory</a>  <p> This program allows user to manage a text based shoe inventory. It reads the inventory from a file then allows users to search, edit and add new shoes to the inventory. </p>
+    <a href="https://github.com/paigomez/nlp_demo">Python Garden</a>  <p> This project demonstrates some simple use cases for spaCy, the natural language processing library. It takes 5 random sentences from wikipedia, splits them into tokens and entities, then prints the results. </p>
+    <a href="https://github.com/paigomez/nlp_demo2">Python Semantics</a>  <p> This project demonstrates some simple use cases for spaCy, using the en_core_web_md language model to compare similarities between different words and phrases, and then discusses the results in comments of the file. </p>
+    
+    </div>
+</div>
+</body>
+
+</html>
 

@@ -4,8 +4,8 @@ def index(request):
     return render(request, "index.html")
 
 
-def hobbies(request):
-    return render(request, "hobbies.html")
+def about(request):
+    return render(request, "about.html")
 
-def contact_me(request):
-    return render(request, "contact_me.html")
+def contact(request):
+    return render(request, "contact.html")
