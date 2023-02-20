@@ -13,5 +13,6 @@ It contains a home page, serving as a sort of CV, then an about page and a conta
 * Run project: `python manage.py runserver`
 * Goto home page: `http://127.0.0.1:8000/personal/`
 
+
 ### Credits
 This was developed by Patricia Gomez, as part of the Hyperion Dev bootcamp
